@@ -1,0 +1,24 @@
+# Internal planning documents — never commit
+Project_Overview_v1_00_AS400_System_Simulator.md
+Technical_Documentation_v1_00_AS400_System_Simulator.md
+
+# IDE / editor
+.vscode/
+.idea/
+*.iml
+
+# macOS
+.DS_Store
+
+# Java build artifacts
+target/
+*.class
+*.jar
+*.war
+
+# Gradle
+.gradle/
+build/
+
+# Maven
+*.log
