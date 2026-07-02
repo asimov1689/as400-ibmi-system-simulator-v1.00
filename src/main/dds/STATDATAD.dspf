@@ -1,0 +1,35 @@
+     A*  STATDATAD - Static Data Maintenance Display File
+     A*  Subfile screen for CUSTODIAN browse/maintain
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R SFL1                      SFL
+     A            CUST_ID        6A  O  6  2
+     A            CUST_NAME     40A  O  6 10
+     A            MARKET_CD      4A  O  6 52
+     A            COUNTRY_CD     2A  O  6 58
+     A            STATUS         1A  O  6 62
+     A          R SFLCTL1                   SFLCTL(SFL1)
+     A                                      SFLSIZ(0010)
+     A                                      SFLPAG(0010)
+     A  91                                  SFLCLR
+     A  32                                  SFLDSP
+     A  32                                  SFLDSPCTL
+     A  31                                  SFLEND(*MORE)
+     A                                      CF03(03)
+     A                                      CF05(05)
+     A                                  1  2'Static Data Maintenance'
+     A                                  1 60'STATDATA'
+     A                                  3  2'Cust ID'
+     A                                  3 10'Name'
+     A                                  3 52'Mkt'
+     A                                  3 58'Ct'
+     A                                  3 62'S'
+     A                                  4  2'------------------------------'
+     A          R DETAIL1                    OVERLAY
+     A                                      CF03(03)
+     A                                      CF05(05)
+     A                                 22  2'F3=Exit  F5=Refresh'
+     A                                 23  2'Enter new Cust ID:'
+     A            NEWCUST_ID     6A  B 23 22
+     A            NEWCUST_NM    40A  B 23 30
+     A            NEWMKT_CD      4A  B 23 72
+     A            NEWCTRY_CD     2A  B 23 78

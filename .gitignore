@@ -1,6 +1,5 @@
-# Internal planning documents — never commit
-Project_Overview_v1_00_AS400_System_Simulator.md
-Technical_Documentation_v1_00_AS400_System_Simulator.md
+# Markdown files — not committed until project is finalized
+*.md
 
 # IDE / editor
 .vscode/
